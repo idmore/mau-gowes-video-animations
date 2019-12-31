@@ -1,0 +1,67 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue: #3666e4;
+  --color-orange: #ff8a00;
+  --color-red: #e43b36;
+  --color-green: #26a65b;
+}
+
+body {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper {
+  position: relative;
+  background: var(--color-black);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.categories-wrapper {
+  display: inline-block;
+  width: 100vw;
+  height: calc(100vh - 23px);
+  overflow-x: hidden;
+  display: -webkit-inline-box;
+}
+
+.categories-wrapper__item {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-wrapper__item--blue {
+  background-color: var(--color-blue);
+}
+
+.categories-wrapper__item--red {
+  background-color: var(--color-red);
+}
+
+.categories-wrapper__item--green {
+  background-color: var(--color-green);
+}
+
+.categories-wrapper__item--orange {
+  background-color: var(--color-orange);
+}
+
+.categories-wrapper_text {
+  text-transform: capitalize;
+  color: var(--color-white);
+  font-size: 400px;
+}
+
+.wrapper img.cyclist {
+  position: absolute;
+  height: 200px;
+  bottom: 20px;
+  left: 0;
+  transition: left 0.5s ease;
+}
